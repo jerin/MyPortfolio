@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Type from "./Type";
-import Home2 from "./HomeDetails";
-import Particle from "../Particle";
+import Type from "./Type.jsx";
+import Home2 from "./HomeDetails.jsx";
+import Particle from "../Particle.jsx";
 import homeLogo from "../../assets/home-main.svg";
 import {
   AiFillGithub,
