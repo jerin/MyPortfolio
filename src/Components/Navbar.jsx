@@ -1,35 +1,19 @@
 // import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";  
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { AiFillStar, AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import {
+  AiFillStar,
+  AiOutlineFundProjectionScreen,
+  AiOutlineHome,
+  AiOutlineUser,
+} from "react-icons/ai";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import { useState } from "react";
 import logo from "../Assets/logo.png";
-
-// export default function Navbar() {
-//   return (
-//     <nav>
-//       <ul>
-//         <li>
-//           <NavLink to="/">Home</NavLink>
-//         </li>
-//         <li>
-//           <NavLink to="/about">About</NavLink>
-//         </li>
-//         <li>
-//           <NavLink to="/projects">Projects</NavLink>
-//         </li>
-//         <li>
-//           <NavLink to="/resume">Resume</NavLink>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// }
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -54,9 +38,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-            <label>Jerin John</label>
+          <label>Jerin John</label>
         </Navbar.Brand>
-    
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -119,11 +103,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Button
-                href=""
-                target="_blank"
-                className="fork-btn-inner"
-              >
+              <Button href="" target="_blank" className="fork-btn-inner">
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>

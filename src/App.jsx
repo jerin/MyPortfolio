@@ -5,15 +5,15 @@ import {
   NavLink,
   RouterProvider,
 } from "react-router-dom";
-import RootLayout from "./Components/RootLayout";
-import Home from "./Components/Home/Home";
+import RootLayout from "./Components/RootLayout.jsx";
+import Home from "./Components/Home/Home.jsx";
 import { lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css";
 
-const About = lazy(() => import("./Components/About/About"));
-const Projects = lazy(() => import("./Components/Projects/Projects"));
-const Resume = lazy(() => import("./Components/Resume/Resume"));
+const About = lazy(() => import("./Components/About/About.jsx"));
+const Projects = lazy(() => import("./Components/Projects/Projects.jsx"));
+const Resume = lazy(() => import("./Components/Resume/Resume.jsx"));
 
 const Loading = ({ children }) => (
   <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
