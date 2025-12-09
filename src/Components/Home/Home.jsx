@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type.jsx";
 import Home2 from "./HomeDetails.jsx";
 import Particle from "../Particle.jsx";
-// import homeLogo from "../../assets/home-main.svg";
+import homeLogo from "../../assets/home-main.svg";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -36,12 +36,12 @@ export default function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              {/* <img
+              <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
-              /> */}
+              />
             </Col>
           </Row>
         </Container>

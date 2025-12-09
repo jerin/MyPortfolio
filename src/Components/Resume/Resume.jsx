@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle.jsx";
-// import pdf from "../../Assets/Jerin_John_Resume_ReactJS.pdf";
+import pdf from "../../assets/Jerin_John_Resume_ReactJS.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -20,7 +20,7 @@ function Resume() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          {/* <Button
+          <Button
             variant="primary"
             href={pdf}
             target="_blank"
@@ -28,7 +28,7 @@ function Resume() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button> */}
+          </Button>
         </Row>
 {/* 
         <Row className="resume">
