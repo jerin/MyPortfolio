@@ -13,7 +13,7 @@ import {
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import { useState } from "react";
-import logo from "../Assets/logo.png";
+// import logo from "../Assets/logo.png";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

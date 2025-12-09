@@ -4,7 +4,7 @@ import Particle from "../Particle.jsx";
 import Github from "./Github.jsx";
 import Techstack from "./TechStack.jsx";
 import Aboutcard from "./AboutCard.jsx";
-import laptopImg from "../../Assets/about.png";
+// import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack.jsx";
 
 function About() {
@@ -32,7 +32,7 @@ function About() {
               style={{ paddingTop: "120px", paddingBottom: "50px" }}
               className="about-img"
             >
-              <img src={laptopImg} alt="about" className="img-fluid" />
+              {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
             </Col>
           </Row>
           <h1 className="project-heading">
