@@ -7,12 +7,12 @@ import emotion from "../../assets/Projects/emotion.png";
 import editor from "../../assets/Projects/codeEditor.png";
 import chatify from "../../assets/Projects/chatify.png";
 import suicide from "../../assets/Projects/suicide.png";
-import bitsOfCode from "../../assets/Projects/blog.png";
+import Authentication from "../../assets/Projects/keycloak.png";
 
 function Projects() {
   return (
     <section>
-      <Container fluid className="project-section">
+      <Container fluid={true} className="project-section">
         <Particle />
         <Container>
           <h1 className="project-heading">
@@ -33,7 +33,7 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectDetails
-                imgPath={bitsOfCode}
+                imgPath={Authentication}
                 isBlog={false}
                 title="Bits-0f-C0de"
                 description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."

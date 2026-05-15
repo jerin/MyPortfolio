@@ -13,11 +13,11 @@ function AboutCard() {
             <br />
             I’m currently working as a{" "}
             <span className="purple">
-              Freelance Senior Software Developer
+              Front-end engineer at Intuit, Toronto, Canada
             </span>{" "}<br/>
-            I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            I hold a B.Tech and Diploma in{" "}
+            <span className="purple">Computer Science and Engineering</span> from{" "}
+            <span className="purple">MG University, Kerala, India</span>.
             <br />
             <br />
             Outside of coding, I love engaging in activities that keep me

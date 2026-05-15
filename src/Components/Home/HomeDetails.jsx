@@ -23,7 +23,8 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  HTML, CSS, JavaScript, React.js, Node.js, Typescript, and
+                  .Net{" "}
                 </b>
               </i>
               — and I enjoy working across both backend and frontend stacks.
@@ -33,7 +34,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Web Applications, Software Solutions,{" "}
                 </b>
               </i>
               and exploring new ways to bridge on-chain and off-chain systems.

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import RootLayout from "./Components/RootLayout.jsx";
 import Home from "./Components/Home/Home.jsx";
+import Preloader from "./Components/PreLoader.jsx";
 import { lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css";
@@ -14,9 +15,11 @@ import "./Style.css";
 const About = lazy(() => import("./Components/About/About.jsx"));
 const Projects = lazy(() => import("./Components/Projects/Projects.jsx"));
 const Resume = lazy(() => import("./Components/Resume/Resume.jsx"));
+const Blogs = lazy(() => import("./Components/Blogs/BlogsList.jsx"));
+const BlogDetails = lazy(() => import("./Components/Blogs/BlogDetails.jsx"));
 
 const Loading = ({ children }) => (
-  <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+  <Suspense fallback={<Preloader load />}>{children}</Suspense>
 );
 
 function App() {
@@ -48,6 +51,22 @@ function App() {
           element: (
             <Loading>
               <Resume />
+            </Loading>
+          ),
+        },
+        {
+          path: "/blogs",
+          element: (
+            <Loading>
+              <Blogs />
+            </Loading>
+          ),
+        },
+         {
+          path: "/blogs/:id",
+          element: (
+            <Loading>
+              <BlogDetails />
             </Loading>
           ),
         },

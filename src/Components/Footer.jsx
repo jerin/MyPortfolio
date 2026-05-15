@@ -15,7 +15,7 @@ export default function Footer() {
               <ul className="home-about-social-links">
                 <li className="social-icons">
                   <a
-                    href=""
+                    href="https://github.com/jerin"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
@@ -35,7 +35,7 @@ export default function Footer() {
                 </li>
                 <li className="social-icons">
                   <a
-                    href=""
+                    href="https://www.linkedin.com/in/jerin-john-12b2a575/"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
@@ -45,7 +45,7 @@ export default function Footer() {
                 </li>
                 <li className="social-icons">
                   <a
-                    href=""
+                    href="https://www.instagram.com/jerin_john_kinattingal?igsh=a2NranJnaXJqc2t2&utm_source=qr"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour home-social-icons"

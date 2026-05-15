@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "SOLID Principles in React",
+    "snippet": "SOLID principles are a set of design principles that help developers write maintainable and scalable code. In React, these principles can be applied to create better component structures...",
+    "content": "SOLID is an acronym that stands for five design principles: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. Applying these principles in React can lead to more modular and reusable components, making it easier to manage and scale applications.",
+    "author": "JERIN JOHN",
+    "date": "2024-06-15",
+    "imgUrl": "solid.png"
+  },
+  {
+    "id": 2,
+    "title": "REACT Optimization Techniques",
+    "snippet": "REACT OPtimization tecniqies are essential for improving the performance of React applications. This post explores various techniques to optimize React apps effectively...",
+    "content": "REACT optimization techniques include memoization using React.memo, useCallback, and useMemo hooks, code-splitting with React.lazy and Suspense, and optimizing rendering with shouldComponentUpdate and PureComponent. Implementing these techniques can significantly enhance the user experience by reducing load times and improving responsiveness.",
+    "author": "JERIN JOHN",
+    "date": "2024-06-20",
+    "imgUrl": "optimization.png"
+  },
+  {
+    "id": 3,
+    "title": "REACT COMPONENT DESIGN PATTERNS",
+    "snippet": "REACT COMPONENT DESIGN PATTERNS help developers create reusable and maintainable components. This post discusses various design patterns that can be applied in React development...",
+    "content": "REACT component design patterns include container/presentational components, higher-order components (HOCs), render props, and compound components. These patterns promote code reuse, separation of concerns, and easier testing, leading to more efficient React applications.",
+    "author": "JERIN JOHN",
+    "date": "2024-06-25",
+    "imgUrl": "design.png"
+  },
+  {
+    "id": 4,
+    "title": "Exploring New Features in JavaScript",
+    "snippet": "Exploring new features in JavaScript can help developers stay up-to-date with the latest advancements in the language. This post highlights some of the most exciting new features...",
+    "content": "JavaScript continues to evolve with new features that enhance its capabilities. Some of the latest additions include optional chaining, nullish coalescing, BigInt for handling large integers, and dynamic import for code-splitting. These features improve code readability, safety, and performance, making JavaScript development more efficient.",
+    "author": "JERIN JOHN",
+    "date": "2024-06-30",
+    "imgUrl": "javascript.png"
+  }
+]
