@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectDetails from "./ProjectDetails.jsx";
 import Particle from "../Particle.jsx";
-import leaf from "../../assets/Projects/leaf.png";
+import flight from "../../assets/Projects/flight_tracker_app_thumbnail.svg";
+import StreamLab from "../../assets/Projects/apache_kafka_poc_thumbnail.svg";
 import emotion from "../../assets/Projects/emotion.png";
 import editor from "../../assets/Projects/codeEditor.png";
 import chatify from "../../assets/Projects/chatify.png";
@@ -24,58 +25,37 @@ function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectDetails
-                imgPath={chatify}
+              ghLink="https://github.com/jerin/kafka-poc"
+                imgPath={StreamLab}
                 isBlog={false}
-                title="Chatify"
-                description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+                title="StreamLab"
+                description="A minimal proof-of-concept demonstrating Apache Kafka producer/consumer messaging using Python.Producers (event-service, order-service, metrics-agent) → Kafka Broker Cluster → Consumers
+                Key metrics bar at the bottom showing throughput, p99 latency, replication factor, and retention"
               />
             </Col>
 
             <Col md={4} className="project-card">
               <ProjectDetails
+                  ghLink="https://github.com/jerin/react-redux-node-keycloak"
                 imgPath={Authentication}
                 isBlog={false}
-                title="Bits-0f-C0de"
-                description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+                title="Redhat SSO Authentication"
+                description="Keycloak is an open-source Identity and Access Management (IAM) solution by Red Hat. Here are the key description points: Web-based Admin Console for managing realms, clients, users, and roles.
+                Client adapters for Spring Boot, Node.js, Angular, React, and more"
               />
             </Col>
 
             <Col md={4} className="project-card">
               <ProjectDetails
-                imgPath={editor}
+                  ghLink="https://github.com/jerin/realtime-flight-tracker"
+                imgPath={flight}
                 isBlog={false}
-                title="Editor.io"
-                description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+                title="Flight Tracker App"
+                description="Flight Tracker is a real-time flight monitoring application that allows users to track live aircraft movements across the globe. It provides up-to-date information on flight status, routes, altitude, speed, and estimated arrival times — all visualized on an interactive map interface."
               />
             </Col>
 
-            <Col md={4} className="project-card">
-              <ProjectDetails
-                imgPath={leaf}
-                isBlog={false}
-                title="Plant AI"
-                description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectDetails
-                imgPath={suicide}
-                isBlog={false}
-                title="Ai For Social Good"
-                description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectDetails
-                imgPath={emotion}
-                isBlog={false}
-                title="Face Recognition and Emotion Detection"
-                description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              />
-            </Col>
+            
           </Row>
         </Container>
       </Container>
