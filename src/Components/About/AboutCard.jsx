@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi everyone! I’m <span className="purple">Jerin John</span> from{" "}
-            <span className="purple">Vancouver, Canada</span>.
+            <span className="purple">Toronto, Canada</span>.
             <br />
             I’m currently working as a{" "}
             <span className="purple">

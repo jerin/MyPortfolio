@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function BlogsItem(props) {
   return (
     <Card className="blog-card-view">
-      <Card.Img variant="top" src={"src/Assets/Blogs/" + props.blog.imgUrl} alt="card-img" width="200" height="200"/>
+      <Card.Img variant="top" src={"/assets/Blogs/" + props.blog.imgUrl} alt="card-img" width="200" height="200"/>
       <Card.Body>
         <Card.Title> {props.blog.title}</Card.Title>
         <Card.Subtitle>{props.blog.date}</Card.Subtitle>

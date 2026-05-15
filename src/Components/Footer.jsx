@@ -35,7 +35,7 @@ export default function Footer() {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://www.linkedin.com/in/jerin-john-12b2a575/"
+                    href="https://www.linkedin.com/in/jerin-john-engineer/"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
