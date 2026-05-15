@@ -23,7 +23,7 @@ export default function BlogsDetails() {
             </p>
             <div className="blog-img-top">
               <img
-                src={"../src/Assets/Blogs/" + blog.imgUrl}
+                src={"/assets/Blogs/" + blog.imgUrl}
                 fluid
                 className="img-fluid w-100"
                 alt="Article image"
