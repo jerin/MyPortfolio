@@ -19,10 +19,7 @@ function BlogsItem(props) {
             <Link to={`/blogs/${props.blog.id}`} className="purple">Read More</Link>
           </Card.Link>
         </Card.Text>
-        <Button variant="primary" href={"#"} target="_blank">
-          <BsGithub /> &nbsp;
-          {"GitHub"}
-        </Button>
+       
       </Card.Body>
     </Card>
   );
