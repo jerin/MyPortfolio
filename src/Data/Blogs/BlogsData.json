@@ -43,5 +43,14 @@
     "date": "2026-05-22",
     "imgUrl": "agile.png",
     "url": "https://medium.com/@john.jerin2/agile-scrum-explained-a-developers-practical-guide-c7de618989c4"
+  },
+  {
+    "id": 6,
+    "title": "Microservice Architecture: A Practical Primer",
+    "snippet": "A practical introduction to microservice architecture — what it is, why it matters, and how to get started building scalable, independent services...",
+    "author": "JERIN JOHN",
+    "date": "2026-05-22",
+    "imgUrl": "micro.png",
+    "url": "https://medium.com/@john.jerin2/microservice-architecture-a-practical-primer-55b88743925b"
   }
 ]
