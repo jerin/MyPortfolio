@@ -12,6 +12,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 
 function Resume() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -34,10 +36,45 @@ function Resume() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center"
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          >
+            <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
+
+        {numPages && (
+          <Row
+            style={{
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "1rem",
+              marginTop: "1rem",
+            }}
+          >
+            <Button
+              variant="primary"
+              onClick={() => setPageNumber((p) => Math.max(p - 1, 1))}
+              disabled={pageNumber <= 1}
+              style={{ maxWidth: "100px" }}
+            >
+              Previous
+            </Button>
+            <span style={{ color: "white" }}>
+              Page {pageNumber} of {numPages}
+            </span>
+            <Button
+              variant="primary"
+              onClick={() => setPageNumber((p) => Math.min(p + 1, numPages))}
+              disabled={pageNumber >= numPages}
+              style={{ maxWidth: "100px" }}
+            >
+              Next
+            </Button>
+          </Row>
+        )}
       </Container>
     </div>
   );
