@@ -18,6 +18,11 @@ export default function BlogsDetails() {
         <title>{blog.title} | Jerin John</title>
         <meta name="description" content={blog.description || `Read "${blog.title}" by Jerin John.`} />
         <link rel="canonical" href={`https://jerinjohn.dev/blogs/${id}`} />
+        <meta property="og:title" content={`${blog.title} | Jerin John`} />
+        <meta property="og:description" content={blog.description || `Read "${blog.title}" by Jerin John.`} />
+        <meta property="og:url" content={`https://jerinjohn.dev/blogs/${id}`} />
+        <meta name="twitter:title" content={`${blog.title} | Jerin John`} />
+        <meta name="twitter:description" content={blog.description || `Read "${blog.title}" by Jerin John.`} />
       </Helmet>
       <Particle />
       <Container fluid={true} className="blog-section">

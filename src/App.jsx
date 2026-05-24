@@ -2,12 +2,12 @@ import "./App.css";
 import {
   createBrowserRouter,
   Navigate,
-  NavLink,
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./Components/RootLayout.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Preloader from "./Components/PreLoader.jsx";
+import NotFound from "./Components/NotFound.jsx";
 import { lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css";
@@ -27,7 +27,7 @@ function App() {
     {
       path: "/",
       element: <RootLayout />,
-      errorElement: <div>Page Not Found</div>,
+      errorElement: <NotFound />,
       children: [
         { index: true, element: <Home /> },
         {

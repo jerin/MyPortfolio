@@ -12,6 +12,11 @@ export default function BlogsList() {
         <title>Blogs | Jerin John</title>
         <meta name="description" content="Read Jerin John's blog — articles on software engineering, React, Node.js, system design, and developer experience." />
         <link rel="canonical" href="https://jerinjohn.dev/blogs" />
+        <meta property="og:title" content="Blogs | Jerin John" />
+        <meta property="og:description" content="Read Jerin John's blog — articles on software engineering, React, Node.js, system design, and developer experience." />
+        <meta property="og:url" content="https://jerinjohn.dev/blogs" />
+        <meta name="twitter:title" content="Blogs | Jerin John" />
+        <meta name="twitter:description" content="Read Jerin John's blog — articles on software engineering, React, Node.js, system design, and developer experience." />
       </Helmet>
       <Particle />
       <Container>

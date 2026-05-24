@@ -15,6 +15,11 @@ function About() {
         <title>About | Jerin John</title>
         <meta name="description" content="Learn about Jerin John — a Software Engineer with expertise in React, Node.js, TypeScript, .NET, and cloud-native development." />
         <link rel="canonical" href="https://jerinjohn.dev/about" />
+        <meta property="og:title" content="About | Jerin John" />
+        <meta property="og:description" content="Learn about Jerin John — a Software Engineer with expertise in React, Node.js, TypeScript, .NET, and cloud-native development." />
+        <meta property="og:url" content="https://jerinjohn.dev/about" />
+        <meta name="twitter:title" content="About | Jerin John" />
+        <meta name="twitter:description" content="Learn about Jerin John — a Software Engineer with expertise in React, Node.js, TypeScript, .NET, and cloud-native development." />
       </Helmet>
       <Particle />
       <Container fluid className="about-section">

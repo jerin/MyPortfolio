@@ -26,6 +26,11 @@ function Resume() {
         <title>Resume | Jerin John</title>
         <meta name="description" content="View and download Jerin John's resume — Software Engineer with experience in React, Node.js, TypeScript, .NET, and cloud-native systems." />
         <link rel="canonical" href="https://jerinjohn.dev/resume" />
+        <meta property="og:title" content="Resume | Jerin John" />
+        <meta property="og:description" content="View and download Jerin John's resume — Software Engineer with experience in React, Node.js, TypeScript, .NET, and cloud-native systems." />
+        <meta property="og:url" content="https://jerinjohn.dev/resume" />
+        <meta name="twitter:title" content="Resume | Jerin John" />
+        <meta name="twitter:description" content="View and download Jerin John's resume — Software Engineer with experience in React, Node.js, TypeScript, .NET, and cloud-native systems." />
       </Helmet>
       <Container fluid className="resume-section">
         <Particle />

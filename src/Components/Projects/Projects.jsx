@@ -14,6 +14,11 @@ function Projects() {
         <title>Projects | Jerin John</title>
         <meta name="description" content="Explore Jerin John's projects — including a real-time Flight Tracker, Apache Kafka streaming demo, and Keycloak SSO authentication app." />
         <link rel="canonical" href="https://jerinjohn.dev/projects" />
+        <meta property="og:title" content="Projects | Jerin John" />
+        <meta property="og:description" content="Explore Jerin John's projects — including a real-time Flight Tracker, Apache Kafka streaming demo, and Keycloak SSO authentication app." />
+        <meta property="og:url" content="https://jerinjohn.dev/projects" />
+        <meta name="twitter:title" content="Projects | Jerin John" />
+        <meta name="twitter:description" content="Explore Jerin John's projects — including a real-time Flight Tracker, Apache Kafka streaming demo, and Keycloak SSO authentication app." />
       </Helmet>
       <Container fluid={true} className="project-section">
         <Particle />

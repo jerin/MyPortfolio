@@ -5,12 +5,6 @@ import Type from "./Type.jsx";
 import Home2 from "./HomeDetails.jsx";
 import Particle from "../Particle.jsx";
 import homeLogo from "../../assets/home-main.svg";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 export default function Home() {
   return (
     <section>
@@ -18,6 +12,11 @@ export default function Home() {
         <title>Jerin John | Software Engineer</title>
         <meta name="description" content="Hi, I'm Jerin John — a Software Engineer who loves building high-performance web applications and scalable backend systems with React, Node.js, TypeScript and .NET." />
         <link rel="canonical" href="https://jerinjohn.dev/" />
+        <meta property="og:title" content="Jerin John | Software Engineer" />
+        <meta property="og:description" content="Hi, I'm Jerin John — a Software Engineer who loves building high-performance web applications and scalable backend systems with React, Node.js, TypeScript and .NET." />
+        <meta property="og:url" content="https://jerinjohn.dev/" />
+        <meta name="twitter:title" content="Jerin John | Software Engineer" />
+        <meta name="twitter:description" content="Hi, I'm Jerin John — a Software Engineer who loves building high-performance web applications and scalable backend systems with React, Node.js, TypeScript and .NET." />
       </Helmet>
       <Container fluid className="home-section" id="home">
         <Particle />
@@ -44,7 +43,7 @@ export default function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="Jerin John - Software Engineer illustration"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
