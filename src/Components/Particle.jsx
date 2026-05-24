@@ -1,11 +1,10 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles"; // or loadSlim, loadBasic, etc.
+import { loadSlim } from "tsparticles-slim";
 
 function Particle() {
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine); // Loads the full tsParticles bundle
-    // Alternatively, use loadSlim(engine) or loadBasic(engine) for smaller bundles
+    await loadSlim(engine);
   }, []);
 
   // const particlesLoaded = useCallback(async (container) => {
@@ -17,7 +16,7 @@ function Particle() {
     // Example: simple snow effect
     particles: {
       number: {
-        value: 100,
+        value: 50,
         density: {
           enable: true,
           value_area: 800,

@@ -4,11 +4,7 @@ import ProjectDetails from "./ProjectDetails.jsx";
 import Particle from "../Particle.jsx";
 import flight from "../../assets/Projects/flight_tracker_app_thumbnail.svg";
 import StreamLab from "../../assets/Projects/apache_kafka_poc_thumbnail.svg";
-import emotion from "../../assets/Projects/emotion.png";
-import editor from "../../assets/Projects/codeEditor.png";
-import chatify from "../../assets/Projects/chatify.png";
-import suicide from "../../assets/Projects/suicide.png";
-import Authentication from "../../assets/Projects/keycloak.png";
+import Authentication from "../../assets/Projects/keycloak.webp";
 
 function Projects() {
   return (
