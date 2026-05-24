@@ -28,12 +28,12 @@
   },
   {
     "id": 4,
-    "title": "Exploring New Features in JavaScript",
-    "snippet": "Exploring new features in JavaScript can help developers stay up-to-date with the latest advancements in the language. This post highlights some of the most exciting new features...",
+    "title": "A 10-Step Bug Analysis Playbook",
+    "snippet": "Bugs are rarely what they first appear to be. This playbook walks through ten sequential stages — from gathering information and reproducing the issue to root cause analysis, remediation, and post-launch monitoring.",
     "author": "JERIN JOHN",
-    "date": "2024-06-30",
-    "imgUrl": "javascript.png",
-    "url": ""
+    "date": "2026-05-24",
+    "imgUrl": "bugs.png",
+    "url": "https://medium.com/@john.jerin2/a-10-step-bug-analysis-playbook-de6fc2297382"
   },
   {
     "id": 5,
