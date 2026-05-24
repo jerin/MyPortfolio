@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -13,6 +14,11 @@ export default function BlogsDetails() {
 
   return (
     <>
+      <Helmet>
+        <title>{blog.title} | Jerin John</title>
+        <meta name="description" content={blog.description || `Read "${blog.title}" by Jerin John.`} />
+        <link rel="canonical" href={`https://jerinjohn.dev/blogs/${id}`} />
+      </Helmet>
       <Particle />
       <Container fluid={true} className="blog-section">
         <Row>

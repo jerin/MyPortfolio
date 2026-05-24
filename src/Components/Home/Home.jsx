@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type.jsx";
 import Home2 from "./HomeDetails.jsx";
@@ -13,6 +14,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Home() {
   return (
     <section>
+      <Helmet>
+        <title>Jerin John | Software Engineer</title>
+        <meta name="description" content="Hi, I'm Jerin John — a Software Engineer who loves building high-performance web applications and scalable backend systems with React, Node.js, TypeScript and .NET." />
+        <link rel="canonical" href="https://jerinjohn.dev/" />
+      </Helmet>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">

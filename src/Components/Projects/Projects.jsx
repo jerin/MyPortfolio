@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectDetails from "./ProjectDetails.jsx";
 import Particle from "../Particle.jsx";
@@ -9,6 +10,11 @@ import Authentication from "../../assets/Projects/keycloak.webp";
 function Projects() {
   return (
     <section>
+      <Helmet>
+        <title>Projects | Jerin John</title>
+        <meta name="description" content="Explore Jerin John's projects — including a real-time Flight Tracker, Apache Kafka streaming demo, and Keycloak SSO authentication app." />
+        <link rel="canonical" href="https://jerinjohn.dev/projects" />
+      </Helmet>
       <Container fluid={true} className="project-section">
         <Particle />
         <Container>

@@ -25,10 +25,11 @@ export default function Footer() {
                 </li>
                 <li className="social-icons">
                   <a
-                    href=""
+                    href="https://x.com/jerin_john"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
+                    aria-label="Twitter / X"
                   >
                     <AiOutlineTwitter />
                   </a>

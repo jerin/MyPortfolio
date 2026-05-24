@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle.jsx";
@@ -21,6 +22,11 @@ function Resume() {
 
   return (
     <div>
+      <Helmet>
+        <title>Resume | Jerin John</title>
+        <meta name="description" content="View and download Jerin John's resume — Software Engineer with experience in React, Node.js, TypeScript, .NET, and cloud-native systems." />
+        <link rel="canonical" href="https://jerinjohn.dev/resume" />
+      </Helmet>
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>

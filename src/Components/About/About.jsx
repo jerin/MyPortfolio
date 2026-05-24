@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle.jsx";
 import Github from "./Github.jsx";
@@ -10,6 +11,11 @@ import Toolstack from "./ToolStack.jsx";
 function About() {
   return (
     <>
+      <Helmet>
+        <title>About | Jerin John</title>
+        <meta name="description" content="Learn about Jerin John — a Software Engineer with expertise in React, Node.js, TypeScript, .NET, and cloud-native development." />
+        <link rel="canonical" href="https://jerinjohn.dev/about" />
+      </Helmet>
       <Particle />
       <Container fluid className="about-section">
         <Container>
