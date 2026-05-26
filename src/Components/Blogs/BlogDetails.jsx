@@ -25,7 +25,7 @@ export default function BlogsDetails() {
         <meta name="twitter:description" content={blog.description || `Read "${blog.title}" by Jerin John.`} />
       </Helmet>
       <Particle />
-      <Container fluid={true} className="blog-section">
+      <Container fluid={true} className="blog-section" aria-label="Blog post">
         <Row>
           <Col md={12}>
             <h1 className="blog-title">{blog.title}</h1>
@@ -37,18 +37,15 @@ export default function BlogsDetails() {
                 src={"/assets/Blogs/" + blog.imgUrl}
                 fluid
                 className="img-fluid w-100"
-                alt="Article image"
+                alt={blog.title}
               />
             </div>
 
-            <div className="blog-content">{blog.content}</div>
-            {/* Add more detailed content here */}
-            {/* Comments section can go here */}
+            <article className="blog-content" aria-label={blog.title}>{blog.content}</article>
           </Col>
 
-          {/* Sidebar Area (can be the same component as the list page) */}
           <Link to="/blogs" className="purple">
-            Back to Home
+            Back to Blogs
           </Link>
         </Row>
       </Container>

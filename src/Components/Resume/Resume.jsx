@@ -39,9 +39,11 @@ function Resume() {
             variant="primary"
             href={pdf}
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download resume as PDF (opens in new tab)"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
+            <AiOutlineDownload aria-hidden="true" />
             &nbsp;Download CV
           </Button>
         </Row>
@@ -73,7 +75,7 @@ function Resume() {
             >
               Previous
             </Button>
-            <span style={{ color: "white" }}>
+            <span role="status" aria-live="polite" style={{ color: "white" }}>
               Page {pageNumber} of {numPages}
             </span>
             <Button

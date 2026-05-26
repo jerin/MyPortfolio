@@ -13,23 +13,29 @@ function ProjectDetails(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
+        <Button
+          variant="primary"
+          href={props.ghLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={props.isBlog ? `Read blog post: ${props.title}` : `View ${props.title} on GitHub`}
+        >
+          <BsGithub aria-hidden="true" /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View live demo of ${props.title}`}
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
+            <CgWebsite aria-hidden="true" /> &nbsp;
             {"Demo"}
           </Button>
         )}

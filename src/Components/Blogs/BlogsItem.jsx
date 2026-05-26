@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 function BlogsItem({ blog }) {
   return (
     <Card className="blog-card-view">
-      <Card.Img variant="top" src={"/assets/Blogs/" + blog.imgUrl} alt="card-img" width="200" height="200" />
+      <Card.Img variant="top" src={"/assets/Blogs/" + blog.imgUrl} alt={blog.title} width="200" height="200" />
       <Card.Body>
         <Card.Title>{blog.title}</Card.Title>
         <Card.Subtitle>{blog.date}</Card.Subtitle>
@@ -12,8 +12,8 @@ function BlogsItem({ blog }) {
           {blog.snippet}
         </Card.Text>
         {blog.url && (
-          <a href={blog.url} target="_blank" rel="noreferrer" className="purple">
-            Read on Medium →
+          <a href={blog.url} target="_blank" rel="noreferrer" className="purple" aria-label={`Read "${blog.title}" on Medium (opens in new tab)`}>
+            Read on Medium <span aria-hidden="true">→</span>
           </a>
         )}
       </Card.Body>

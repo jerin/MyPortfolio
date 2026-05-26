@@ -24,15 +24,15 @@ function AboutCard() {
             creative and inspired:
           </p>
 
-          <ul>
+          <ul aria-label="My hobbies and interests">
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight aria-hidden="true" /> Playing Games 🎮
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight aria-hidden="true" /> Writing Tech Blogs ✍️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight aria-hidden="true" /> Traveling and Exploring New Places 🌍
             </li>
           </ul>
 

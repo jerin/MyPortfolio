@@ -7,7 +7,7 @@ import Particle from "../Particle.jsx";
 import homeLogo from "../../assets/home-main.svg";
 export default function Home() {
   return (
-    <section>
+    <section aria-labelledby="home-heading">
       <Helmet>
         <title>Jerin John | Software Engineer</title>
         <meta name="description" content="Hi, I'm Jerin John — a Software Engineer who loves building high-performance web applications and scalable backend systems with React, Node.js, TypeScript and .NET." />
@@ -23,9 +23,9 @@ export default function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 id="home-heading" style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave" role="img" aria-label="Waving hand">
                   👋🏻
                 </span>
               </h1>

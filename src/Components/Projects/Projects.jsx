@@ -9,7 +9,7 @@ import Authentication from "../../assets/Projects/keycloak.webp";
 
 function Projects() {
   return (
-    <section>
+    <section aria-labelledby="projects-heading">
       <Helmet>
         <title>Projects | Jerin John</title>
         <meta name="description" content="Explore Jerin John's projects — including a real-time Flight Tracker, Apache Kafka streaming demo, and Keycloak SSO authentication app." />
@@ -23,7 +23,7 @@ function Projects() {
       <Container fluid={true} className="project-section">
         <Particle />
         <Container>
-          <h1 className="project-heading">
+          <h1 id="projects-heading" className="project-heading">
             My Recent <strong className="purple">Works </strong>
           </h1>
           <p style={{ color: "white" }}>

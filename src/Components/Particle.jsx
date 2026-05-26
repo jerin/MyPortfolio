@@ -110,6 +110,7 @@ function Particle() {
   return (
     <Particles
       id="tsparticles"
+      aria-hidden="true"
       init={particlesInit}
       // loaded={particlesLoaded}
       options={options}

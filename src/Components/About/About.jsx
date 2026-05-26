@@ -24,6 +24,7 @@ function About() {
       <Particle />
       <Container fluid className="about-section">
         <Container>
+          <section aria-labelledby="about-heading">
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             <Col
               md={7}
@@ -33,7 +34,7 @@ function About() {
                 paddingBottom: "50px",
               }}
             >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <h1 id="about-heading" style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
                 Know Who <strong className="purple">I'M</strong>
               </h1>
               <Aboutcard />
@@ -43,21 +44,28 @@ function About() {
               style={{ paddingTop: "120px", paddingBottom: "50px" }}
               className="about-img"
             >
-              <img src={laptopImg} alt="about" className="img-fluid" />
+              <img src={laptopImg} alt="Jerin John working on a laptop" className="img-fluid" />
             </Col>
           </Row>
-          <h1 className="project-heading">
+          </section>
+          <section aria-labelledby="skillset-heading">
+          <h1 id="skillset-heading" className="project-heading">
             Professional <strong className="purple">Skillset </strong>
           </h1>
 
           <Techstack />
+          </section>
 
-          <h1 className="project-heading">
+          <section aria-labelledby="tools-heading">
+          <h1 id="tools-heading" className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
           <Toolstack />
+          </section>
 
-          <Github />
+          <section aria-labelledby="github-heading">
+            <Github />
+          </section>
         </Container>
       </Container>
     </>

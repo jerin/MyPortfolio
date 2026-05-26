@@ -24,7 +24,7 @@ export default function Footer() {
                     aria-label="GitHub"
                     className="icon-colour  home-social-icons"
                   >
-                    <AiFillGithub />
+                    <AiFillGithub aria-hidden="true" />
                   </a>
                 </li>
                 <li className="social-icons">
@@ -35,7 +35,7 @@ export default function Footer() {
                     className="icon-colour  home-social-icons"
                     aria-label="Twitter / X"
                   >
-                    <AiOutlineTwitter />
+                    <AiOutlineTwitter aria-hidden="true" />
                   </a>
                 </li>
                 <li className="social-icons">
@@ -46,7 +46,7 @@ export default function Footer() {
                     aria-label="LinkedIn"
                     className="icon-colour  home-social-icons"
                   >
-                    <FaLinkedinIn />
+                    <FaLinkedinIn aria-hidden="true" />
                   </a>
                 </li>
                 <li className="social-icons">
@@ -57,7 +57,7 @@ export default function Footer() {
                     aria-label="Instagram"
                     className="icon-colour home-social-icons"
                   >
-                    <AiFillInstagram />
+                    <AiFillInstagram aria-hidden="true" />
                   </a>
                 </li>
                 <li className="social-icons">
@@ -66,7 +66,7 @@ export default function Footer() {
                     aria-label="Email"
                     className="icon-colour home-social-icons"
                   >
-                    <AiOutlineMail />
+                    <AiOutlineMail aria-hidden="true" />
                   </a>
                 </li>
               </ul>

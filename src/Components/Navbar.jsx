@@ -36,24 +36,25 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <label ><b>Jerin John</b></label>
+          <span><b>Jerin John</b></span>
         </Navbar.Brand>
 
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
+          aria-label="Toggle navigation"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} aria-hidden="true" /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -63,7 +64,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} aria-hidden="true" /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -75,6 +76,7 @@ function NavBar() {
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
+                  aria-hidden="true"
                 />
                 Projects
               </Nav.Link>
@@ -86,7 +88,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} aria-hidden="true" /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -96,14 +98,14 @@ function NavBar() {
                 to="/blogs"
                 onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} aria-hidden="true" /> Blogs
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button href="https://github.com/jerin/MyPortfolio" target="_blank" rel="noreferrer" aria-label="Fork or star this project on GitHub" className="fork-btn-inner">
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1.2em" }} aria-hidden="true" />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} aria-hidden="true" />
               </Button>
             </Nav.Item>
           </Nav>

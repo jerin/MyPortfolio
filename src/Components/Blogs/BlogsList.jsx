@@ -7,7 +7,7 @@ import Data from "../../Data/Blogs/BlogsData.json";
 
 export default function BlogsList() {
   return (
-    <Container fluid className="blog-section">
+    <Container fluid className="blog-section" aria-label="Blog posts">
       <Helmet>
         <title>Blogs | Jerin John</title>
         <meta name="description" content="Read Jerin John's blog — articles on software engineering, React, Node.js, system design, and developer experience." />
@@ -21,13 +21,12 @@ export default function BlogsList() {
       <Particle />
       <Container>
         <h1 className="blog-heading">My Awesome Blog</h1>
-        <Row style={{ justifyContent: "center", paddingBottom: "3px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "3px" }} role="list" aria-label="Blog articles">
           {Data.map((blog) => (
-            <Col md={4} className="blog-card" key={blog.id}>
+            <Col md={4} className="blog-card" key={blog.id} role="listitem">
               <BlogsItem blog={blog} />
             </Col>
           ))}
-          
         </Row>
       </Container>
     </Container>

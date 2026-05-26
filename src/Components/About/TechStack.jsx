@@ -26,93 +26,93 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
+        <img src={Javascript} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Javascript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
+        <img src={Typescript} alt="" aria-hidden="true" />
+        <div className="tech-icons-text">Typescript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Node} alt="node" />
+        <img src={Node} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Node.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
+        <img src={ReactIcon} alt="" aria-hidden="true" />
         <div className="tech-icons-text">React.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
+        <SiSolidity fontSize={"24px"} aria-hidden="true" />
         <div className="tech-icons-text">Solidity</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Mongo} alt="mongoDb" />
+        <img src={Mongo} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Mongo DB</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Redux} alt="redux" />
+        <img src={Redux} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Redux</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs fontSize={"24px"} />
+        <SiNextdotjs fontSize={"24px"} aria-hidden="true" />
         <div className="tech-icons-text">Next.js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
+        <img src={Git} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Git</div>
       </Col>
-     
+
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Redis} alt="redis" />
+        <img src={Redis} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Redis</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Docker} alt="docker" />
+        <img src={Docker} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Docker</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
+        <img src={SQL} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Postgresql</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
+        <img src={Python} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Python</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={HaskellIcon} alt="haskell" />
+        <img src={HaskellIcon} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Haskell</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" />
+        <img src={Tailwind} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Tailwind CSS</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
+        <img src={MUI} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Material UI</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Postman} alt="Postman" />
+        <img src={Postman} alt="" aria-hidden="true" />
         <div className="tech-icons-text">Postman</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <FaRust fontSize={"24px"} />
+        <FaRust fontSize={"24px"} aria-hidden="true" />
         <div className="tech-icons-text">Rust</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={AWS} alt="Postman" className="tech-icon-images" />
+        <img src={AWS} alt="" aria-hidden="true" className="tech-icon-images" />
         <div className="tech-icons-text">AWS</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Kafka} alt="Kafka" className="tech-icon-images" />
+        <img src={Kafka} alt="" aria-hidden="true" className="tech-icon-images" />
         <div className="tech-icons-text">Kafka</div>
       </Col>
     </Row>
