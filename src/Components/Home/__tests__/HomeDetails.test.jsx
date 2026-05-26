@@ -16,7 +16,7 @@ describe("HomeDetails", () => {
 
   it("renders the avatar image with correct alt text", () => {
     render(<HomeDetails />);
-    expect(screen.getByAltText("avatar")).toBeInTheDocument();
+    expect(screen.getByAltText("Jerin John's profile photo")).toBeInTheDocument();
   });
 
   it("highlights key technologies in the description", () => {

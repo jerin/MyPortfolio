@@ -39,14 +39,14 @@ describe("Home", () => {
 
   it("renders the wave emoji span", () => {
     const { container } = render(<Home />);
-    const wave = container.querySelector('[role="img"][aria-labelledby="wave"]');
+    const wave = container.querySelector('[role="img"][aria-label="Waving hand"]');
     expect(wave).toBeInTheDocument();
     expect(wave).toHaveTextContent("👋🏻");
   });
 
   it("renders the home logo image", () => {
     render(<Home />);
-    expect(screen.getByAltText("home pic")).toBeInTheDocument();
+    expect(screen.getByAltText("Jerin John - Software Engineer illustration")).toBeInTheDocument();
   });
 
   it("renders the Particle background", () => {
@@ -67,6 +67,6 @@ describe("Home", () => {
 
   it("renders the avatar image inside HomeDetails", () => {
     render(<Home />);
-    expect(screen.getByAltText("avatar")).toBeInTheDocument();
+    expect(screen.getByAltText("Jerin John's profile photo")).toBeInTheDocument();
   });
 });
