@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectDetails from "./ProjectDetails.jsx";
@@ -8,6 +9,8 @@ import StreamLab from "../../assets/Projects/apache_kafka_poc_thumbnail.svg";
 import Authentication from "../../assets/Projects/keycloak.webp";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section aria-labelledby="projects-heading">
       <Helmet>
@@ -24,15 +27,14 @@ function Projects() {
         <Particle />
         <Container>
           <h1 id="projects-heading" className="project-heading">
-            My Recent <strong className="purple">Works </strong>
+            {t("projects.heading")}{" "}
+            <strong className="purple">{t("projects.headingHighlight")} </strong>
           </h1>
-          <p style={{ color: "white" }}>
-            Here are a few projects I've worked on recently.
-          </p>
+          <p style={{ color: "white" }}>{t("projects.subheading")}</p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectDetails
-              ghLink="https://github.com/jerin/kafka-poc"
+                ghLink="https://github.com/jerin/kafka-poc"
                 imgPath={StreamLab}
                 isBlog={false}
                 title="StreamLab"
@@ -43,7 +45,7 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectDetails
-                  ghLink="https://github.com/jerin/react-redux-node-keycloak"
+                ghLink="https://github.com/jerin/react-redux-node-keycloak"
                 imgPath={Authentication}
                 isBlog={false}
                 title="Redhat SSO Authentication"
@@ -54,15 +56,13 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectDetails
-                  ghLink="https://github.com/jerin/realtime-flight-tracker"
+                ghLink="https://github.com/jerin/realtime-flight-tracker"
                 imgPath={flight}
                 isBlog={false}
                 title="Flight Tracker App"
                 description="Flight Tracker is a real-time flight monitoring application that allows users to track live aircraft movements across the globe. It provides up-to-date information on flight status, routes, altitude, speed, and estimated arrival times — all visualized on an interactive map interface."
               />
             </Col>
-
-            
           </Row>
         </Container>
       </Container>

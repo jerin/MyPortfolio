@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle.jsx";
@@ -9,6 +10,8 @@ import laptopImg from "../../assets/about.png";
 import Toolstack from "./ToolStack.jsx";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
@@ -25,42 +28,44 @@ function About() {
       <Container fluid className="about-section">
         <Container>
           <section aria-labelledby="about-heading">
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <Col
-              md={7}
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
-              <h1 id="about-heading" style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Know Who <strong className="purple">I'M</strong>
-              </h1>
-              <Aboutcard />
-            </Col>
-            <Col
-              md={5}
-              style={{ paddingTop: "120px", paddingBottom: "50px" }}
-              className="about-img"
-            >
-              <img src={laptopImg} alt="Jerin John working on a laptop" className="img-fluid" />
-            </Col>
-          </Row>
+            <Row style={{ justifyContent: "center", padding: "10px" }}>
+              <Col
+                md={7}
+                style={{
+                  justifyContent: "center",
+                  paddingTop: "30px",
+                  paddingBottom: "50px",
+                }}
+              >
+                <h1 id="about-heading" style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                  {t("about.pageTitle")}{" "}
+                  <strong className="purple">{t("about.pageTitleHighlight")}</strong>
+                </h1>
+                <Aboutcard />
+              </Col>
+              <Col
+                md={5}
+                style={{ paddingTop: "120px", paddingBottom: "50px" }}
+                className="about-img"
+              >
+                <img src={laptopImg} alt="Jerin John working on a laptop" className="img-fluid" />
+              </Col>
+            </Row>
           </section>
           <section aria-labelledby="skillset-heading">
-          <h1 id="skillset-heading" className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
-          </h1>
-
-          <Techstack />
+            <h1 id="skillset-heading" className="project-heading">
+              {t("about.skillsetHeading")}{" "}
+              <strong className="purple">{t("about.skillsetHighlight")} </strong>
+            </h1>
+            <Techstack />
           </section>
 
           <section aria-labelledby="tools-heading">
-          <h1 id="tools-heading" className="project-heading">
-            <strong className="purple">Tools</strong> I use
-          </h1>
-          <Toolstack />
+            <h1 id="tools-heading" className="project-heading">
+              <strong className="purple">{t("about.toolsHeading")}</strong>{" "}
+              {t("about.toolsSuffix")}
+            </h1>
+            <Toolstack />
           </section>
 
           <section aria-labelledby="github-heading">

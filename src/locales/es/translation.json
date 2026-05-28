@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "resume": "Currículum",
+    "blogs": "Blog"
+  },
+  "home": {
+    "greeting": "¡Hola!",
+    "greetingAriaLabel": "Mano saludando",
+    "iam": "SOY",
+    "typeStrings": [
+      "Desarrollador de Software",
+      "Freelancer",
+      "Desarrollador Full Stack",
+      "Colaborador Open Source"
+    ]
+  },
+  "homeDetails": {
+    "heading": "PERMÍTEME",
+    "headingHighlight": "PRESENTARME",
+    "headingSuffix": "",
+    "para1": "Soy un ingeniero de software que ama transformar ideas en productos confiables y escalables. Con el tiempo, he explorado diversas tecnologías y encontré mi pasión en la creación de sistemas de alto rendimiento y experiencias de usuario intuitivas.",
+    "para2Start": "Tengo dominio en",
+    "para2Tech": "HTML, CSS, JavaScript, React.js, Node.js, TypeScript y .Net",
+    "para2End": "— y disfruto trabajando tanto en backend como en frontend.",
+    "para3Start": "Mis principales áreas de interés incluyen desarrollar",
+    "para3Highlight": "Aplicaciones Web, Soluciones de Software,",
+    "para3End": "y explorar nuevas formas de conectar sistemas on-chain y off-chain.",
+    "para4Start": "Siempre que es posible, me encanta crear proyectos con",
+    "para4Node": "Node.js",
+    "para4And": "y frameworks modernos como",
+    "para4React": "React.js",
+    "para4And2": "y",
+    "para4Next": "Next.js"
+  },
+  "about": {
+    "pageTitle": "Conóceme",
+    "pageTitleHighlight": "",
+    "skillsetHeading": "Habilidades",
+    "skillsetHighlight": "Profesionales",
+    "toolsHeading": "Herramientas",
+    "toolsSuffix": "que uso"
+  },
+  "aboutCard": {
+    "intro1": "¡Hola a todos! Soy",
+    "name": "Jerin John",
+    "intro2": "de",
+    "location": "Toronto, Canadá",
+    "workPrefix": "Actualmente trabajo como",
+    "workRole": "Ingeniero Front-end en Intuit, Toronto, Canadá",
+    "eduPrefix": "Tengo un B.Tech y Diploma en",
+    "eduDegree": "Ciencias de la Computación e Ingeniería",
+    "eduFrom": "de la",
+    "eduInstitute": "Universidad MG, Kerala, India",
+    "hobbiesIntro": "Fuera de programar, me gustan las actividades que me mantienen creativo e inspirado:",
+    "hobby1": "Jugar videojuegos 🎮",
+    "hobby2": "Escribir blogs técnicos ✍️",
+    "hobby3": "Viajar y explorar nuevos lugares 🌍",
+    "quote": "\"¡Esfuérzate por construir cosas que marquen la diferencia!\""
+  },
+  "projects": {
+    "heading": "Mis",
+    "headingHighlight": "Proyectos Recientes",
+    "subheading": "Aquí hay algunos proyectos en los que he trabajado recientemente."
+  },
+  "blogs": {
+    "heading": "Mi Blog"
+  },
+  "resume": {
+    "downloadBtn": "Descargar CV",
+    "downloadAriaLabel": "Descargar currículum en PDF (se abre en una nueva pestaña)",
+    "prevBtn": "Anterior",
+    "nextBtn": "Siguiente",
+    "pageStatus": "Página {{current}} de {{total}}"
+  },
+  "footer": {
+    "heading": "Encuéntrame en",
+    "subtext": "No dudes en",
+    "connect": "conectar",
+    "subtextMid": "conmigo o",
+    "emailLink": "enviarme un correo"
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "description": "La página que buscas no existe.",
+    "backHome": "Volver al inicio"
+  }
+}

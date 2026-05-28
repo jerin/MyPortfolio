@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "resume": "Lebenslauf",
+    "blogs": "Blog"
+  },
+  "home": {
+    "greeting": "Hallo!",
+    "greetingAriaLabel": "Winkende Hand",
+    "iam": "ICH BIN",
+    "typeStrings": [
+      "Softwareentwickler",
+      "Freelancer",
+      "Full-Stack-Entwickler",
+      "Open-Source-Mitwirkender"
+    ]
+  },
+  "homeDetails": {
+    "heading": "LASS MICH MICH",
+    "headingHighlight": "VORSTELLEN",
+    "headingSuffix": "",
+    "para1": "Ich bin ein Softwareingenieur, der es liebt, Ideen in zuverlässige und skalierbare Produkte zu verwandeln. Im Laufe der Zeit habe ich verschiedene Technologien erkundet und meine Leidenschaft beim Aufbau hochleistungsfähiger Systeme und intuitiver Benutzererlebnisse gefunden.",
+    "para2Start": "Ich bin versiert in",
+    "para2Tech": "HTML, CSS, JavaScript, React.js, Node.js, TypeScript und .Net",
+    "para2End": "— und arbeite gerne sowohl im Backend als auch im Frontend.",
+    "para3Start": "Meine wichtigsten Interessengebiete umfassen die Entwicklung von",
+    "para3Highlight": "Webanwendungen, Softwarelösungen,",
+    "para3End": "und die Erforschung neuer Wege zur Verbindung von On-Chain- und Off-Chain-Systemen.",
+    "para4Start": "Wann immer möglich, baue ich Projekte gerne mit",
+    "para4Node": "Node.js",
+    "para4And": "und modernen Frameworks wie",
+    "para4React": "React.js",
+    "para4And2": "und",
+    "para4Next": "Next.js"
+  },
+  "about": {
+    "pageTitle": "Wer",
+    "pageTitleHighlight": "bin ich?",
+    "skillsetHeading": "Berufliche",
+    "skillsetHighlight": "Fähigkeiten",
+    "toolsHeading": "Werkzeuge",
+    "toolsSuffix": "die ich nutze"
+  },
+  "aboutCard": {
+    "intro1": "Hallo zusammen! Ich bin",
+    "name": "Jerin John",
+    "intro2": "aus",
+    "location": "Toronto, Kanada",
+    "workPrefix": "Ich arbeite derzeit als",
+    "workRole": "Frontend-Ingenieur bei Intuit, Toronto, Kanada",
+    "eduPrefix": "Ich habe einen B.Tech und ein Diplom in",
+    "eduDegree": "Informatik und Ingenieurwesen",
+    "eduFrom": "von der",
+    "eduInstitute": "MG-Universität, Kerala, Indien",
+    "hobbiesIntro": "Abseits des Programmierens liebe ich Aktivitäten, die mich kreativ und inspiriert halten:",
+    "hobby1": "Videospiele spielen 🎮",
+    "hobby2": "Tech-Blogs schreiben ✍️",
+    "hobby3": "Reisen und neue Orte entdecken 🌍",
+    "quote": "\"Strebe danach, Dinge zu bauen, die einen Unterschied machen!\""
+  },
+  "projects": {
+    "heading": "Meine neuesten",
+    "headingHighlight": "Projekte",
+    "subheading": "Hier sind einige Projekte, an denen ich zuletzt gearbeitet habe."
+  },
+  "blogs": {
+    "heading": "Mein Blog"
+  },
+  "resume": {
+    "downloadBtn": "Lebenslauf herunterladen",
+    "downloadAriaLabel": "Lebenslauf als PDF herunterladen (öffnet in neuem Tab)",
+    "prevBtn": "Zurück",
+    "nextBtn": "Weiter",
+    "pageStatus": "Seite {{current}} von {{total}}"
+  },
+  "footer": {
+    "heading": "Finde mich auf",
+    "subtext": "Zögere nicht,",
+    "connect": "dich zu verbinden",
+    "subtextMid": "oder",
+    "emailLink": "mir eine E-Mail zu schreiben"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht.",
+    "backHome": "Zurück zur Startseite"
+  }
+}

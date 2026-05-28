@@ -1,11 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type.jsx";
 import Home2 from "./HomeDetails.jsx";
 import Particle from "../Particle.jsx";
 import homeLogo from "../../assets/home-main.svg";
+
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <section aria-labelledby="home-heading">
       <Helmet>
@@ -24,14 +28,14 @@ export default function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 id="home-heading" style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-label="Waving hand">
+                {t("home.greeting")}{" "}
+                <span className="wave" role="img" aria-label={t("home.greetingAriaLabel")}>
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                {t("home.iam")}
                 <strong className="main-name"> JERIN JOHN</strong>
               </h1>
 

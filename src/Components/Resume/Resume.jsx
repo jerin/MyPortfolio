@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -12,6 +13,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 function Resume() {
+  const { t } = useTranslation();
   const [width, setWidth] = useState(1200);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -40,11 +42,11 @@ function Resume() {
             href={pdf}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Download resume as PDF (opens in new tab)"
+            aria-label={t("resume.downloadAriaLabel")}
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload aria-hidden="true" />
-            &nbsp;Download CV
+            &nbsp;{t("resume.downloadBtn")}
           </Button>
         </Row>
 
@@ -73,10 +75,10 @@ function Resume() {
               disabled={pageNumber <= 1}
               style={{ maxWidth: "100px" }}
             >
-              Previous
+              {t("resume.prevBtn")}
             </Button>
             <span role="status" aria-live="polite" style={{ color: "white" }}>
-              Page {pageNumber} of {numPages}
+              {t("resume.pageStatus", { current: pageNumber, total: numPages })}
             </span>
             <Button
               variant="primary"
@@ -84,7 +86,7 @@ function Resume() {
               disabled={pageNumber >= numPages}
               style={{ maxWidth: "100px" }}
             >
-              Next
+              {t("resume.nextBtn")}
             </Button>
           </Row>
         )}

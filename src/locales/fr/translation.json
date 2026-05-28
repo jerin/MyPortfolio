@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "resume": "CV",
+    "blogs": "Blog"
+  },
+  "home": {
+    "greeting": "Bonjour !",
+    "greetingAriaLabel": "Main qui salue",
+    "iam": "JE SUIS",
+    "typeStrings": [
+      "Développeur Logiciel",
+      "Freelance",
+      "Développeur Full Stack",
+      "Contributeur Open Source"
+    ]
+  },
+  "homeDetails": {
+    "heading": "PERMETTEZ-MOI DE ME",
+    "headingHighlight": "PRÉSENTER",
+    "headingSuffix": "",
+    "para1": "Je suis un ingénieur logiciel passionné par la transformation d'idées en produits fiables et évolutifs. Au fil du temps, j'ai exploré de nombreuses technologies et trouvé ma passion dans la création de systèmes haute performance et d'expériences utilisateur intuitives.",
+    "para2Start": "Je suis compétent en",
+    "para2Tech": "HTML, CSS, JavaScript, React.js, Node.js, TypeScript et .Net",
+    "para2End": "— et j'apprécie travailler aussi bien côté backend que frontend.",
+    "para3Start": "Mes principaux domaines d'intérêt incluent le développement",
+    "para3Highlight": "d'Applications Web, de Solutions Logicielles,",
+    "para3End": "et l'exploration de nouvelles façons de connecter les systèmes on-chain et off-chain.",
+    "para4Start": "Dès que possible, j'aime créer des projets avec",
+    "para4Node": "Node.js",
+    "para4And": "et des frameworks modernes comme",
+    "para4React": "React.js",
+    "para4And2": "et",
+    "para4Next": "Next.js"
+  },
+  "about": {
+    "pageTitle": "Apprenez à me",
+    "pageTitleHighlight": "connaître",
+    "skillsetHeading": "Compétences",
+    "skillsetHighlight": "Professionnelles",
+    "toolsHeading": "Outils",
+    "toolsSuffix": "que j'utilise"
+  },
+  "aboutCard": {
+    "intro1": "Bonjour à tous ! Je suis",
+    "name": "Jerin John",
+    "intro2": "de",
+    "location": "Toronto, Canada",
+    "workPrefix": "Je travaille actuellement en tant que",
+    "workRole": "Ingénieur Front-end chez Intuit, Toronto, Canada",
+    "eduPrefix": "Je suis titulaire d'un B.Tech et d'un Diplôme en",
+    "eduDegree": "Informatique et Ingénierie",
+    "eduFrom": "de",
+    "eduInstitute": "l'Université MG, Kerala, Inde",
+    "hobbiesIntro": "En dehors du code, j'aime m'engager dans des activités créatives et inspirantes :",
+    "hobby1": "Jouer aux jeux vidéo 🎮",
+    "hobby2": "Écrire des articles tech ✍️",
+    "hobby3": "Voyager et découvrir de nouveaux endroits 🌍",
+    "quote": "\"Aspire à créer des choses qui font une différence !\""
+  },
+  "projects": {
+    "heading": "Mes",
+    "headingHighlight": "Projets Récents",
+    "subheading": "Voici quelques projets sur lesquels j'ai travaillé récemment."
+  },
+  "blogs": {
+    "heading": "Mon Blog"
+  },
+  "resume": {
+    "downloadBtn": "Télécharger le CV",
+    "downloadAriaLabel": "Télécharger le CV en PDF (s'ouvre dans un nouvel onglet)",
+    "prevBtn": "Précédent",
+    "nextBtn": "Suivant",
+    "pageStatus": "Page {{current}} sur {{total}}"
+  },
+  "footer": {
+    "heading": "Retrouvez-moi sur",
+    "subtext": "N'hésitez pas à",
+    "connect": "me contacter",
+    "subtextMid": "ou à",
+    "emailLink": "m'envoyer un e-mail"
+  },
+  "notFound": {
+    "title": "Page Introuvable",
+    "description": "La page que vous recherchez n'existe pas.",
+    "backHome": "Retour à l'accueil"
+  }
+}

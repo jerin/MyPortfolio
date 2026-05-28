@@ -1,44 +1,45 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
+  const { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Jerin John</span> from{" "}
-            <span className="purple">Toronto, Canada</span>.
+            {t("aboutCard.intro1")} <span className="purple">{t("aboutCard.name")}</span>{" "}
+            {t("aboutCard.intro2")}{" "}
+            <span className="purple">{t("aboutCard.location")}</span>.
             <br />
-            I’m currently working as a{" "}
-            <span className="purple">
-              Front-end engineer at Intuit, Toronto, Canada
-            </span>{" "}<br/>
-            I hold a B.Tech and Diploma in{" "}
-            <span className="purple">Computer Science and Engineering</span> from{" "}
-            <span className="purple">MG University, Kerala, India</span>.
+            {t("aboutCard.workPrefix")}{" "}
+            <span className="purple">{t("aboutCard.workRole")}</span>{" "}
+            <br />
+            {t("aboutCard.eduPrefix")}{" "}
+            <span className="purple">{t("aboutCard.eduDegree")}</span>{" "}
+            {t("aboutCard.eduFrom")}{" "}
+            <span className="purple">{t("aboutCard.eduInstitute")}</span>.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            {t("aboutCard.hobbiesIntro")}
           </p>
 
           <ul aria-label="My hobbies and interests">
             <li className="about-activity">
-              <ImPointRight aria-hidden="true" /> Playing Games 🎮
+              <ImPointRight aria-hidden="true" /> {t("aboutCard.hobby1")}
             </li>
             <li className="about-activity">
-              <ImPointRight aria-hidden="true" /> Writing Tech Blogs ✍️
+              <ImPointRight aria-hidden="true" /> {t("aboutCard.hobby2")}
             </li>
             <li className="about-activity">
-              <ImPointRight aria-hidden="true" /> Traveling and Exploring New Places 🌍
+              <ImPointRight aria-hidden="true" /> {t("aboutCard.hobby3")}
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
+          <p style={{ color: "rgb(155 126 172)" }}>{t("aboutCard.quote")}</p>
         </blockquote>
       </Card.Body>
     </Card>

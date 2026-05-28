@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "blogs": "Blogs"
+  },
+  "home": {
+    "greeting": "Hi There!",
+    "greetingAriaLabel": "Waving hand",
+    "iam": "I'M",
+    "typeStrings": [
+      "Software Developer",
+      "Freelancer",
+      "Full Stack Developer",
+      "Open Source Contributor"
+    ]
+  },
+  "homeDetails": {
+    "heading": "LET ME",
+    "headingHighlight": "INTRODUCE",
+    "headingSuffix": "MYSELF",
+    "para1": "I'm a Software Engineer who loves transforming ideas into reliable, scalable products. Over time, I've explored several technologies and found my passion in building high-performance systems and intuitive user experiences.",
+    "para2Start": "I'm proficient in",
+    "para2Tech": "HTML, CSS, JavaScript, React.js, Node.js, Typescript, and .Net",
+    "para2End": "— and I enjoy working across both backend and frontend stacks.",
+    "para3Start": "My key areas of interest include developing",
+    "para3Highlight": "Web Applications, Software Solutions,",
+    "para3End": "and exploring new ways to bridge on-chain and off-chain systems.",
+    "para4Start": "Whenever possible, I love building projects with",
+    "para4Node": "Node.js",
+    "para4And": "and modern frameworks like",
+    "para4React": "React.js",
+    "para4And2": "and",
+    "para4Next": "Next.js"
+  },
+  "about": {
+    "pageTitle": "Know Who",
+    "pageTitleHighlight": "I'M",
+    "skillsetHeading": "Professional",
+    "skillsetHighlight": "Skillset",
+    "toolsHeading": "Tools",
+    "toolsSuffix": "I use"
+  },
+  "aboutCard": {
+    "intro1": "Hi everyone! I'm",
+    "name": "Jerin John",
+    "intro2": "from",
+    "location": "Toronto, Canada",
+    "workPrefix": "I'm currently working as a",
+    "workRole": "Front-end engineer at Intuit, Toronto, Canada",
+    "eduPrefix": "I hold a B.Tech and Diploma in",
+    "eduDegree": "Computer Science and Engineering",
+    "eduFrom": "from",
+    "eduInstitute": "MG University, Kerala, India",
+    "hobbiesIntro": "Outside of coding, I love engaging in activities that keep me creative and inspired:",
+    "hobby1": "Playing Games 🎮",
+    "hobby2": "Writing Tech Blogs ✍️",
+    "hobby3": "Traveling and Exploring New Places 🌍",
+    "quote": "\"Strive to build things that make a difference!\""
+  },
+  "projects": {
+    "heading": "My Recent",
+    "headingHighlight": "Works",
+    "subheading": "Here are a few projects I've worked on recently."
+  },
+  "blogs": {
+    "heading": "My Awesome Blog"
+  },
+  "resume": {
+    "downloadBtn": "Download CV",
+    "downloadAriaLabel": "Download resume as PDF (opens in new tab)",
+    "prevBtn": "Previous",
+    "nextBtn": "Next",
+    "pageStatus": "Page {{current}} of {{total}}"
+  },
+  "footer": {
+    "heading": "Find Me On",
+    "subtext": "Feel free to",
+    "connect": "connect",
+    "subtextMid": "with me or",
+    "emailLink": "drop me an email"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "backHome": "Go Back Home"
+  }
+}

@@ -1,50 +1,46 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t("homeDetails.heading")}{" "}
+              <span className="purple">{t("homeDetails.headingHighlight")}</span>{" "}
+              {t("homeDetails.headingSuffix")}
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              {t("homeDetails.para1")}
               <br />
               <br />
-              I’m proficient in
+              {t("homeDetails.para2Start")}
               <i>
-                <b className="purple">
-                  {" "}
-                  HTML, CSS, JavaScript, React.js, Node.js, Typescript, and
-                  .Net{" "}
-                </b>
+                <b className="purple"> {t("homeDetails.para2Tech")} </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              {t("homeDetails.para2End")}
               <br />
               <br />
-              My key areas of interest include developing
+              {t("homeDetails.para3Start")}
               <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Software Solutions,{" "}
-                </b>
+                <b className="purple"> {t("homeDetails.para3Highlight")} </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              {t("homeDetails.para3End")}
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              {t("homeDetails.para4Start")}
+              <b className="purple"> {t("homeDetails.para4Node")} </b>{t("homeDetails.para4And")}{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">{t("homeDetails.para4React")}</b>{" "}
+                {t("homeDetails.para4And2")}{" "}
+                <b className="purple">{t("homeDetails.para4Next")}</b>.
               </i>
             </p>
           </Col>
@@ -58,4 +54,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
